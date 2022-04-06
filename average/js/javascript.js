@@ -8,10 +8,14 @@ function reset(){
 	document.getElementById('Avg').innerHTML = "Average is: " + avg;
 }
 
+function isNumber(n){
+	return Number(n) === n;
+}
+
 function average(){
 	var ans = prompt("Add a number: ");
 	ans /= 1;
-	if (Number.isInteger(ans) == true)
+	if (isNumber(ans) == true)
 	{
 		if (ans.length != 0)
 		{
