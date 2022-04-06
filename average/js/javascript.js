@@ -11,7 +11,7 @@ function average(){
 	var sum = 0;
 	if (ans.length != 0)
 	{
-		avg.push(ans);
+		avg.push(" " + ans);
 	}
     document.getElementById('cout').innerHTML = "Sum of: " + avg;
 	for (i = 0; i < avg.length; ++i)
