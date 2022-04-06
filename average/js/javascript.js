@@ -3,7 +3,10 @@ var avg = [];
 function average(){
 	var ans = prompt("Add a number: ");
 	var sum = 0;
-	avg.push(ans);
+	if (ans.length != 0)
+	{
+		avg.push(ans);
+	}
     document.getElementById('cout').innerHTML = avg;
 	for (i = 0; i < avg.length; ++i)
 	{
