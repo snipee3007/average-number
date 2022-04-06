@@ -10,17 +10,25 @@ function reset(){
 
 function average(){
 	var ans = prompt("Add a number: ");
-
-	if (ans.length != 0)
+	ans /= 1;
+	if (Number.isInteger(ans) == true)
 	{
-		avg.push(" " + ans);
-		sum += ans / 1;
-		document.getElementById('cout').innerHTML = "Sum of " + avg.length +" number(s): "+ avg;
-		var a = ans;
-		if (avg.length > 1)
+		if (ans.length != 0)
 		{
-			a = sum / (avg.length);
+			avg.push(" " + ans);
+			sum += ans / 1;
+			document.getElementById('cout').innerHTML = "Sum of " + avg.length +" number(s): "+ avg;
+			var a = ans;
+			if (avg.length > 1)
+			{
+				a = sum / (avg.length);
+			}
+			document.getElementById('Avg').innerHTML = "Average is: " + a;
 		}
-		document.getElementById('Avg').innerHTML = "Average is: " + a;
 	}
+	else
+	{
+		alert("Mày bị Khánh à, này có phải số đéo đâu, sao mày có thể ngu hơn cả thằng Khánh thế?");
+	}
+	
 }
