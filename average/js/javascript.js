@@ -8,6 +8,28 @@ function reset(){
 	document.getElementById('Avg').innerHTML = "Average is: " + avg;
 }
 
+function cauchui(){
+	var randnum = Math.floor((Math.random()*5) + 1);
+	switch (randnum)
+	{
+		case 1:
+			return "Mày bị Khánh à, này có phải số loz đâu, sao mày có thể ngu hơn cả thằng Khánh thế?";
+			break;
+		case 2:
+			return "Ugh... Can you read?";
+			break;
+		case 3:
+			return "bruh, khuyết tật gì chứ khuyết tật não thế này thì chịu...";
+			break;
+		case 4:
+			return "Cốc cốc... bên trong đầu m có gì không đấy?";
+			break;
+		case 5:
+			return "Dùng cái não mày mà nghĩ xem cần phải điền gì vào đây, à quên có quái đâu mà dùng.";
+			break;
+	}
+}
+
 function isNumber(n){
 	return Number(n) === n;
 }
@@ -32,7 +54,7 @@ function average(){
 	}
 	else
 	{
-		alert("Mày bị Khánh à, này có phải số đéo đâu, sao mày có thể ngu hơn cả thằng Khánh thế?");
+		alert(cauchui());
 	}
 	
 }
